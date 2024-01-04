@@ -30,7 +30,7 @@
 TOP_DIR=$PWD
 NEED_MEMORY=524288
 BUILD_LINK=$TOP_DIR/build
-BUILD_DIR=/dev/shm/indi-build
+BUILD_DIR=/Users/miki/indibuild
 
 
 
@@ -142,5 +142,5 @@ fi
 
 # Begin the build process
 cd $BUILD_DIR
-cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug $TOP_DIR
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug $TOP_DIR -v
 make -j$NUMBER_OF_JOBS
